@@ -1,0 +1,51 @@
+{
+  "models": {
+    "Carga": {
+      "ADM202103151232,0000001": {
+        "Stamp": "ADM202103151232,0000001",
+        "matricula": "AA-00-00",
+        "produto": "Brita 1",
+        "ref": "170102001",
+        "unidade": "ton",
+        "cliente": "Construções Pragosa S.A.",
+        "clienteNo": 27009,
+        "qtt": 22,
+        "qttDisponivel": 100,
+        "icon": "Brita1",
+        "carregado": false,
+        "recusado": false,
+        "motivoRecusa": ""
+      },
+      "ADM202103151232,0000002": {
+        "Stamp": "ADM202103151232,0000002",
+        "matricula": "AA-00-01",
+        "produto": "Brita 2",
+        "ref": "170102002",
+        "unidade": "ton",
+        "cliente": "Construções Pragosa S.A.",
+        "clienteNo": 27009,
+        "qtt": 0,
+        "qttDisponivel": 100,
+        "icon": "none",
+        "carregado": false,
+        "recusado": false,
+        "motivoRecusa": ""
+      },
+      "ADM202103151232,0000003": {
+        "Stamp": "ADM202103151232,0000003",
+        "matricula": "AA-00-03",
+        "produto": "Tout-Venant 1º",
+        "ref": "170101001",
+        "unidade": "ton",
+        "cliente": "Construções Pragosa S.A.",
+        "clienteNo": 27009,
+        "qtt": 0,
+        "qttDisponivel": 100,
+        "icon": "ToutVenant1",
+        "carregado": false,
+        "recusado": false,
+        "motivoRecusa": ""
+      }
+    }
+  }
+}
