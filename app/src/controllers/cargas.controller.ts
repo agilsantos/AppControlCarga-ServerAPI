@@ -29,12 +29,12 @@ import {
   response
 } from '@loopback/rest';
 import {Carga} from '../models';
-import {CargasRepository} from '../repositories';
+import {CargaRepository} from '../repositories';
 
-export class CargasController {
+export class CargaController {
   constructor(
-    @repository(CargasRepository)
-    public cargasRepository : CargasRepository,
+    @repository(CargaRepository)
+    public cargaRepository : CargaRepository,
   ) {}
 
   /*
@@ -68,7 +68,7 @@ export class CargasController {
   async count(
     @param.where(Carga) where?: Where<Carga>,
   ): Promise<Count> {
-    return this.cargasRepository.count(where);
+    return this.cargaRepository.count(where);
   }
 
   @get('/cargas')
@@ -86,7 +86,7 @@ export class CargasController {
   async find(
     @param.filter(Carga) filter?: Filter<Carga>,
   ): Promise<Carga[]> {
-    return this.cargasRepository.find(filter);
+    return this.cargaRepository.find(filter);
     /*
     const cargas:Carga[] = await this.cargasRepository.find(filter);
     console.log(cargas);
@@ -128,7 +128,7 @@ export class CargasController {
     @param.path.string('id') id: string,
     @param.filter(Carga, {exclude: 'where'}) filter?: FilterExcludingWhere<Carga>
   ): Promise<Carga> {
-    return this.cargasRepository.findById(id, filter);
+    return this.cargaRepository.findById(id, filter);
   }
 
   /*
@@ -171,9 +171,9 @@ export class CargasController {
     @param.path.string('id') id: string
     //,@requestBody() carga: Carga,
   ): Promise<void> {
-      const carga:Carga = await this.cargasRepository.findById(id);
+      const carga:Carga = await this.cargaRepository.findById(id);
       carga.carregado=true
-      await this.cargasRepository.updateById(id, carga);
+      await this.cargaRepository.updateById(id, carga);
       //await this.cargasRepository.replaceById(id, carga);
   }
 
@@ -186,10 +186,10 @@ export class CargasController {
     @param.query.string('reason') reason?: string
   ): Promise<void> {
       console.log(reason);
-      const carga:Carga = await this.cargasRepository.findById(id);
+      const carga:Carga = await this.cargaRepository.findById(id);
       carga.recusado=true;
       carga.motivoRecusa=reason ? reason : "Não Indicada";
-      await this.cargasRepository.updateById(id, carga);
+      await this.cargaRepository.updateById(id, carga);
   }
 
   /*

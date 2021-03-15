@@ -74,7 +74,7 @@ Content-Length: 853
 ## Obter um Controlo de Carga
 
 ```powershell
-curl -i -X GET "http://localhost:3000/cargas/ADM202103151232,0000001/carregar" -H  "accept: application/json"
+curl -i -X GET "http://localhost:3000/cargas/ADM202103151232,0000001" -H  "accept: application/json"
 ```
 
 Resultado:

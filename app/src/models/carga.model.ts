@@ -91,6 +91,7 @@ export class Carga extends Entity {
   constructor(data?: Partial<Carga>) {
     super(data);
   }
+
 }
 
 export interface CargaRelations {
