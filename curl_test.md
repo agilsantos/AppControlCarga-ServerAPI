@@ -147,7 +147,7 @@ Keep-Alive: timeout=5
 ## Marcar Controlo de Carga como Recusado com motivo da Recusa
 
 ```powershell
-curl -i -X PUT "http://localhost:3000/cargas/ADM202103151232,0000001/recusar?reason=Produto%20Sem%Stock" -H  "accept: application/json"
+curl -i -X PUT "http://localhost:3000/cargas/ADM202103151232,0000001/recusar?reason=Produto%20Sem%20Stock" -H  "accept: application/json"
 ```
 
 Resultado:
