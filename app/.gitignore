@@ -53,6 +53,8 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
+package-lock.json
+yarn.lock
 
 # dotenv environment variables file
 .env
@@ -62,3 +64,7 @@ typings/
 
 # Cache used by TypeScript's incremental build
 *.tsbuildinfo
+
+# Env file
+.env
+process.env

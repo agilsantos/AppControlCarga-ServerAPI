@@ -32,5 +32,10 @@
   "cSpell.ignoreWords": [
     "disponivel",
     "qtt"
-  ]
+  ],
+  "appService.zipIgnorePattern": [
+    "node_modules{,/**}",
+    ".vscode{,/**}"
+  ],
+  "appService.defaultWebAppToDeploy": "None"
 }

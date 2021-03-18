@@ -1,4 +1,5 @@
-import {ApplicationConfig, AppCcapi} from './application';
+import {AppCcapi, ApplicationConfig} from './application';
+
 
 export * from './application';
 
