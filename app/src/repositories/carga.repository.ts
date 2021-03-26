@@ -12,7 +12,6 @@ export class CargaRepository extends DefaultCrudRepository<
     @inject('datasources.db') dataSource: DbDataSource,
   ) {
     super(Carga, dataSource);
-
   }
   /*
   find(filter?: Filter<Carga> | undefined, options?: AnyObject | undefined): Promise<(Carga & CargaRelations)[]>{

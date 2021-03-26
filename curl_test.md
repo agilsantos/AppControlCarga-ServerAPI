@@ -4,9 +4,11 @@
 
 ```powershell
 curl -i -X GET "http://localhost:3000/cargas/" -H  "accept: application/json"
+
+curl -i -X GET "https://prgwebapp.azurewebsites.net/cargas" -H  "accept: application/json"
 ```
 
-Resulado:
+Resultado:
 
 ```http
 HTTP/1.1 200 OK
@@ -75,6 +77,8 @@ Content-Length: 853
 
 ```powershell
 curl -i -X GET "http://localhost:3000/cargas/ADM202103151232,0000001" -H  "accept: application/json"
+
+curl -i -X GET "https://prgwebapp.azurewebsites.net/cargas/ADM202103151232,0000001" -H  "accept: application/json"
 ```
 
 Resultado:
@@ -114,6 +118,8 @@ Content-Length: 306
 
 ```powershell
 curl -i -X PUT "http://localhost:3000/cargas/ADM202103151232,0000001/carregar" -H  "accept: application/json"
+
+curl -i -X PUT "https://prgwebapp.azurewebsites.net/cargas/ADM202103151232,0000001/carregar" -H  "accept: application/json"
 ```
 
 Resultado:
@@ -131,7 +137,9 @@ Keep-Alive: timeout=5
 ## Marcar Controlo de Carga como Recusado sem dar Motivo da Recusa
 
 ```powershell
-curl -i -X PUT "http://localhost:3000/cargas/ADM202103151232,0000001/recusar" -H  "accept: application/json"
+curl -i -X PUT "http://localhost:3000/cargas/ADM202103151232,0000001/recusar" -H  "accept: application/json" -H "Content-Length: 0"
+
+curl -i -X PUT "https://prgwebapp.azurewebsites.net/cargas/ADM202103151232,0000001/recusar" -H  "accept: application/json" -H "Content-Length: 0"
 ```
 
 ```http
@@ -147,7 +155,9 @@ Keep-Alive: timeout=5
 ## Marcar Controlo de Carga como Recusado com motivo da Recusa
 
 ```powershell
-curl -i -X PUT "http://localhost:3000/cargas/ADM202103151232,0000001/recusar?reason=Produto%20Sem%20Stock" -H  "accept: application/json"
+curl -i -X PUT "http://localhost:3000/cargas/ADM202103151232,0000001/recusar?reason=Produto%20Sem%20Stock" -H  "accept: application/json" -H "Content-Length: 0"
+
+curl -i -X PUT "https://prgwebapp.azurewebsites.net/cargas/ADM202103151232,0000001/recusar?reason=Produto%20Sem%20Stock" -H  "accept: application/json" -H "Content-Length: 0"
 ```
 
 Resultado:

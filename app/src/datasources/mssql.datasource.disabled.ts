@@ -9,7 +9,10 @@ const config = {
   port: 1433,
   user: 'saags',
   password: 'agil@prag01',
-  database: '_MaisRitmo26'
+  database: '_MaisRitmo26',
+  "options": {
+    "enableArithAbort": true
+    }
 };
 
 // Observe application's life cycle to disconnect the datasource when
